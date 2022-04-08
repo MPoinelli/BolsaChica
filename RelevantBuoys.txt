@@ -1,0 +1,6 @@
+# List of buoys from surfline.com
+
+Long Beach Channel, CA (215)
+San Pedro South, CA (213)
+San Pedro, CA (092)
+Santa Monica Bay, CA (028)
