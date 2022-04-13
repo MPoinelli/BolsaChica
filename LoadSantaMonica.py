@@ -1,9 +1,6 @@
 import datetime
 import csv
 import pandas as pd
-
-from io import StringIO
-import csv
 import requests
 
 # Getting the current date
