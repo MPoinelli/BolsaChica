@@ -1,7 +1,5 @@
 import datetime
-import csv
 import pandas as pd
-import requests
 
 # Getting the current date
 # and time
@@ -15,11 +13,5 @@ URL_order       = "waveFlagPrimary=1&orderByMax(%22time%2Cstation_id%22)"
 
 URL = URL_erdapp + URL_parameters + URL_constraints + URL_order
 
-# Download file and convert to dataframe
-with requests.Session() as s:
-    
-    download = s.get(URL)
-    decoded_content = download.content.decode('utf-8')
 
-    cr = csv.reader(decoded_content.splitlines(), delimiter=',')
-    df = pd.DataFrame(cr)
+df = pd.read_csv(URL)
