@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Getting the current date and time of today and yesterday (defined as 24 hours ago)
 today = datetime.datetime.utcnow().replace(microsecond=0, second=0, minute=0)
-yesterday = datetime.datetime.utcnow().replace(microsecond=0, second=0, minute=0) - datetime.timedelta(days=10)
+yesterday = datetime.datetime.utcnow().replace(microsecond=0, second=0, minute=0) - datetime.timedelta(days=6)
 
 today_url = today.strftime("%Y-%m-%dT%H:%M:%S").replace(':','%3A')
 yesterday_url = yesterday.strftime("%Y-%m-%dT%H:%M:%S").replace(':','%3A')
